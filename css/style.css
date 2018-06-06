@@ -12,7 +12,7 @@ body {
     height: 90px;
 }
 .content {
-  width: 78%;
+  width: 80%;
   margin: 0 auto;
   display: table;
 
@@ -26,6 +26,9 @@ body {
 .buy {
     display: table-cell;
     vertical-align: middle;
+}
+.buya {
+    padding-right: 20px;
 }
 .buyimg {
  width: 60px;
@@ -62,11 +65,28 @@ body {
 .main-img {
     grid-area: main-img;
     width: 100%;
-    height: 800px;
+    height: 700px;
     background: url("../img/main-img.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    position: relative;
 }
+.main-img span {
+    color: #000000;
+    font-size: 40px;
+    font-family: cursive;
+    position: absolute;
 
+}
+.main-slogan1 {
+    transform: rotate(-10deg);
+    top: 50px;
+    left: 20px;
+}
+.main-slogan2 {
+    transform: rotate(10deg);
+    top: 150px;
+    left: 600px;
+}
 /* нище стилі для менюшки*/
 .main-menu {
     grid-area: main-menu;
@@ -83,7 +103,7 @@ display: table-cell;
 
 }
 .item-menu{  /* Це елементи меню*/
-     background-color: #0f6fa4;
+     background-color: rgba(16, 112, 163, 0.7);
     margin-top: 10px;
     margin-right: 40px;
     height: 30px;
@@ -92,20 +112,20 @@ display: table-cell;
     text-align: center;
     padding-top: 10px;
     float: right;
-
+    text-transform: uppercase;
 } /* Категорії */
 .menu-item1 {
-    background-color: #fd07c8;
+    background-color: rgba(253, 7, 200, 0.7);
 }
 .menu-item2 {
-    background-color: #fd561f;
+    background-color: rgba(253, 86, 31, 0.7);
 }
 .menu-item3 {
-    background-color: #35fd0d;
+    background-color: rgba(53, 253, 13, 0.7);
 }
 .menu-item4 {
 
-    background-color: #FDBF01;
+    background-color: rgba(253, 191, 1, 0.7);
 }
 .menu-item5 {
 
@@ -114,85 +134,168 @@ display: table-cell;
 /* Нище стилі для категорій*/
 .item1 {
     width: 100%;
-    background: #0f6fa4;
+    background-color: #0B4F72;
     height: 70px;
     text-align: center;
      padding-top: 10px;
+    text-transform: uppercase;
 }
 .item1 span {
    font-size: 40px;
 }
 .item2 {
     width: 100%;
-    background: #FDBF01;
+    background: #B28601;
     height: 70px;
     text-align: center;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 .item2 span {
     font-size: 40px;
 }
 .item3 {
     width: 100%;
-    background:  #35fd0d;;
+    background:  #25B209;
     height: 70px;
     text-align: center;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 .item3 span {
     font-size: 40px;
 }
 .item4 {
     width: 100%;
-    background:  #fd561f;
+    background:  #B23C16;
     height: 70px;
     text-align: center;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 .item4 span {
     font-size: 40px;
 }
 .item5 {
     width: 100%;
-    background:  #fd07c8;
+    background:  #B2058C;
     height: 70px;
     text-align: center;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 .item5 span {
     font-size: 40px;
 }
 /* Вище стилі для категорій*/
+
 .content-in-content {
-
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    height: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-.item1-content img {
-    display: inline-block;
-    width: 31%;
-    margin-right: 30px;
+.item1-staf {
+    margin: 0 auto;
+    width: 300px;
+    height: 338px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    text-transform: uppercase;
 
 }
-.last-item {
-    margin-right: 0 !important;
+.camera1,
+.camera2,
+.camera3,
+.camera4,
+.camera5,
+.camera6 {
+border-radius: 20px;
+    background: linear-gradient(to top, #c9c9c9, white);
+    overflow: hidden;
+    border: none;
+
 }
-/*.left {*/
-    /*grid-area: left;*/
+.camera1 img,
+.camera2 img,
+.camera3 img,
+.camera4 img,
+.camera5 img,
+.camera6 img {
+    margin: 12px;
+    margin-bottom: 5px;
+}
 
-/*}*/
-/*.main {*/
-    /*grid-area: main;*/
+.camera1 .name,
+.camera2 .name,
+.camera3 .name,
+.camera4 .name,
+.camera5 .name,
+.camera6 .name{
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 20px;
 
+}
+.camera1 .description,
+.camera2 .description,
+.camera3 .description,
+.camera4 .description,
+.camera5 .description,
+.camera6 .description{
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 23px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
 
-/*}*/
-/*.right {*/
-    /*grid-area: right;*/
+}
+.camera2 {
+    padding-top: 20px;
+}
+.camera5, .camera6 {
+    padding-top: 45px;
+}
+.item2-staf {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 2px solid red;
+}
+.item3-staf {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 2px solid red;
+}
+.item4-staf {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 2px solid red;
+}
+.item5-staf {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 2px solid red;
+}
 
-/*}*/
 /* нище - стилі для footer  */
 .footer{
     grid-area: footer;
@@ -201,6 +304,7 @@ display: table-cell;
 
 }
 .footer p {
+    margin-top: 25px;
     display: inline-block;
     float: right;
 
@@ -209,16 +313,29 @@ display: table-cell;
     display: table-cell;
     vertical-align: middle;
 }
+.social-icons {
+    margin-top: 20px;
+    margin-left: 150px;
+    display: inline-block;
+
+}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+
+}
+.twiter {
+    background: url("../img/twitter.png") no-repeat;
+    background-size: contain;
+}
+.inst {
+    background: url("../img/inst.png") no-repeat;
+    background-size: contain;
+}
+.facebook {
+    background: url("../img/facebook.png") no-repeat;
+    background-size: contain;
+}
+.
 /* вище - стилі для footer  */
-/*.container {*/
-    /*display: grid;*/
-    /*grid-template-areas: "header header header"*/
-                         /*"main-img main-img main-img"*/
-                         /*"main-menu main-menu main-menu"*/
-                          /*"item1 item1 item1"*/
-                         /*"left main right"*/
-                         /*"footer footer footer";*/
-    /*grid-template-columns: 10% 1fr 10%;*/
-    /*grid-template-rows: 90px 800px 85px 70px 300vh 70px;*/
-    /*min-height: 100vh;*/
-/*}*/
