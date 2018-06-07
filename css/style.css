@@ -137,7 +137,7 @@ display: table-cell;
     background-color: #0B4F72;
     height: 70px;
     text-align: center;
-     padding-top: 10px;
+     padding-top: 15px;
     text-transform: uppercase;
 }
 .item1 span {
@@ -148,7 +148,7 @@ display: table-cell;
     background: #B28601;
     height: 70px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     text-transform: uppercase;
 }
 .item2 span {
@@ -159,7 +159,7 @@ display: table-cell;
     background:  #25B209;
     height: 70px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     text-transform: uppercase;
 }
 .item3 span {
@@ -170,7 +170,7 @@ display: table-cell;
     background:  #B23C16;
     height: 70px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     text-transform: uppercase;
 }
 .item4 span {
@@ -181,7 +181,7 @@ display: table-cell;
     background:  #B2058C;
     height: 70px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     text-transform: uppercase;
 }
 .item5 span {
@@ -198,6 +198,8 @@ display: table-cell;
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
+/* Розділ з фотіками*/
 .item1-staf {
     margin: 0 auto;
     width: 300px;
@@ -267,40 +269,278 @@ border-radius: 20px;
 .camera5, .camera6 {
     padding-top: 45px;
 }
+
+/* Розділ з обєктивами*/
 .item2-staf {
     margin: 0 auto;
     width: 300px;
-    height: 300px;
-    background-color: black;
+    height: 338px;
+    box-sizing: border-box;
     border: 2px solid red;
+    text-transform: uppercase;
 }
+.lens1,
+.lens2,
+.lens3,
+.lens4,
+.lens5{
+    border-radius: 20px;
+    background: linear-gradient(to top, #c9c9c9, white);
+    overflow: hidden;
+    border: none;
+
+}
+.lens1 img,
+.lens2 img,
+.lens3 img,
+.lens4 img,
+.lens5 img {
+    margin: 12px;
+    margin-bottom: 5px;
+}
+
+.lens1 .name,
+.lens2 .name,
+.lens3 .name,
+.lens4 .name,
+.lens5 .name{
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+}
+.lens1 .description,
+.lens2 .description,
+.lens3 .description,
+.lens4 .description,
+.lens5 .description {
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 23px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
+}
+.lens4 {
+    padding-top: 35px;
+}
+.lens3 img {
+    height: 150px;
+    padding-bottom: 17PX;
+}
+.lens3 {
+    padding-top: 40px;
+}
+.lens5 img {
+    height: 200px;
+    margin-left: 25px;
+
+}
+.lens5 {
+    padding-top: 10px;
+}
+.lens1 img {
+    height: 210px;
+    margin-left: 45px;
+
+}
+.lens2 img {
+    height: 210px;
+    margin-left: 70px;
+
+}
+/* Розділ з штативами*/
 .item3-staf {
     margin: 0 auto;
     width: 300px;
-    height: 300px;
-    background-color: black;
+    height: 338px;
+    box-sizing: border-box;
     border: 2px solid red;
+    text-transform: uppercase;
 }
+.tripod1,
+.tripod2{
+    border-radius: 20px;
+    background: linear-gradient(to top, #c9c9c9, white);
+    overflow: hidden;
+    border: none;
+
+}
+.tripod1 img,
+.tripod2 img{
+    margin: 12px;
+    margin-bottom: 5px;
+}
+
+.tripod1 .name,
+.tripod2 .name{
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+}
+.tripod1 .description,
+.tripod2 .description{
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 23px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
+}
+.tripod2 img {
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+.tripod1 img {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+/* Розділ з вспишками*/
 .item4-staf {
     margin: 0 auto;
     width: 300px;
-    height: 300px;
-    background-color: black;
+    height: 338px;
+    box-sizing: border-box;
     border: 2px solid red;
+    text-transform: uppercase;
 }
+.outbreak1,
+.outbreak2,
+.outbreak3,
+.outbreak4 {
+    border-radius: 20px;
+    background: linear-gradient(to top, #c9c9c9, white);
+    overflow: hidden;
+    border: none;
+
+}
+.outbreak1 img,
+.outbreak2 img,
+.outbreak3 img,
+.outbreak4 img {
+    margin: 12px;
+    margin-bottom: 5px;
+    height: 230px;
+}
+
+.outbreak1 .name,
+.outbreak2 .name,
+.outbreak3 .name,
+.outbreak4 .name {
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 20outbreak
+}
+.outbreak1 .description,
+.outbreak2 .description,
+.outbreak3 .description,
+.outbreak4 .description {
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 23px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
+}
+.outbreak1 img {
+    margin-left: 85px;
+}
+.outbreak2 img {
+    margin-left: 80px;
+}
+.outbreak3 img {
+    margin-left: 35px;
+}
+.outbreak4 img {
+    margin-left: 70px;
+}
+
+/* Розділ з всяким іншим*/
 .item5-staf {
     margin: 0 auto;
     width: 300px;
-    height: 300px;
-    background-color: black;
+    height: 338px;
+    box-sizing: border-box;
     border: 2px solid red;
+    text-transform: uppercase;
+}
+.accessory1,
+.accessory2,
+.accessory3{
+    border-radius: 20px;
+    background: linear-gradient(to top, #c9c9c9, white);
+    overflow: hidden;
+    border: none;
+
+}
+.accessory1 img,
+.accessory2 img,
+.accessory3 img {
+    margin: 12px;
+    margin-bottom: 5px;
+    height: 230px;
 }
 
+.accessory1 .name,
+.accessory2 .name,
+.accessory3 .name {
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 20outbreak
+}
+.accessory1 .description,
+.accessory2 .description,
+.accessory3 .description {
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 23px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 60px;
+}
+.accessory1 img {
+    margin-left: 75px;
+}
+.accessory2 img {
+    margin-left: 25px;
+}
+.accessory3 img {
+    margin-left: 70px;
+}
 /* нище - стилі для footer  */
 .footer{
     grid-area: footer;
     background-color: black;
-
+  position: relative;
 
 }
 .footer p {
@@ -336,6 +576,14 @@ border-radius: 20px;
 .facebook {
     background: url("../img/facebook.png") no-repeat;
     background-size: contain;
+}
+.madeby {
+    position: absolute;
+    top: 45px;
+    left: 75%;
+    font-family: cursive;
+    font-size: 10px;
+
 }
 .
 /* вище - стилі для footer  */
