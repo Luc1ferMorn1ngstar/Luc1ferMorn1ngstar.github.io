@@ -17,45 +17,56 @@ body {
   display: table;
 
 }
+.header-flex {
 
-#logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.logo {
     font-size: 60px;
     text-transform: uppercase;
     vertical-align: middle;
+    padding-right: 130px;
 }
-.buy {
-    display: table-cell;
-    vertical-align: middle;
+.header-links1 {
+margin-top: 10px;
+    position: relative;
+    min-width: 130px;
+    white-space: nowrap;
 }
-.buya {
-    padding-right: 20px;
+.header-links2 {
+    margin-top: 10px;
+    position: relative;
+    min-width: 270px;
+    white-space: nowrap;
+}
+.header-links3 {
+    margin-top: 10px;
+    position: relative;
+    min-width: 180px;
+    white-space: nowrap;
 }
 .buyimg {
+
  width: 60px;
 }
-.email {
-    display: table-cell;
-    vertical-align: middle;
-}
+
 .emailimg {
     width: 60px;
 }
-.phone{
-    display: table-cell;
-    vertical-align: middle;
-}
+
 .phoneimg {
     width: 60px;
 }
-#email {
-    display: table-cell;
-    vertical-align: middle;
+.buy,
+.email,
+.phone {
+    position: absolute;
+    top: 20px;
+    left: 60px;
 }
-#phone {
-    display: table-cell;
-    vertical-align: middle;
-}
-    .header a{
+.header a{
         color: white;
         text-decoration: none;
     }
@@ -73,18 +84,18 @@ body {
 .main-img span {
     color: #000000;
     font-size: 40px;
-    font-family: cursive;
+    font-family: 'Algeria';
     position: absolute;
 
 }
 .main-slogan1 {
     transform: rotate(-10deg);
-    top: 50px;
+    top: 80px;
     left: 20px;
 }
 .main-slogan2 {
     transform: rotate(10deg);
-    top: 150px;
+    top: 170px;
     left: 600px;
 }
 /* нище стилі для менюшки*/
@@ -102,6 +113,14 @@ display: table-cell;
     padding-left: 40px;
 
 }
+.menu-container {
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main-menu a {
+    color: white;
+}
 .item-menu{  /* Це елементи меню*/
      background-color: rgba(16, 112, 163, 0.7);
     margin-top: 12px;
@@ -114,22 +133,29 @@ display: table-cell;
     float: right;
 	font-size: 14px;
     text-transform: uppercase;
+    border: 1px solid #212020;
 } /* Категорії */
+.item-menu:hover {
+    box-shadow: 0 -5px #212020 inset;
+    transform: scale(1.1);
+	opacity: 0.95;
+}
 .menu-item1 {
-    background-color: rgba(253, 7, 200, 0.7);
+
 }
 .menu-item2 {
-    background-color: rgba(253, 86, 31, 0.7);
+    background-color: rgba(253, 191, 1, 0.7);
+
 }
 .menu-item3 {
     background-color: rgba(53, 253, 13, 0.7);
 }
 .menu-item4 {
+    background-color: rgba(253, 86, 31, 0.7);
 
-    background-color: rgba(253, 191, 1, 0.7);
 }
 .menu-item5 {
-
+    background-color: rgba(253, 7, 200, 0.7);
 }
 /* вище стилі для менюшки*/
 /* Нище стилі для категорій*/
@@ -208,6 +234,7 @@ display: table-cell;
     box-sizing: border-box;
     border: 2px solid red;
     text-transform: uppercase;
+    position: relative;
 
 }
 .camera1,
@@ -222,16 +249,27 @@ border-radius: 20px;
     border: none;
 
 }
+.item1-staf .item-staf-img-container{
+   position: relative;
+    width: 300px;
+    height: 228px;
+
+}
+
 .camera1 img,
 .camera2 img,
 .camera3 img,
 .camera4 img,
 .camera5 img,
 .camera6 img {
-    margin: 12px;
-    margin-bottom: 5px;
+    left: 15px;
+position: absolute;
+    display: none;
 }
+.curry {
+    display: inline!important;
 
+}
 .camera1 .name,
 .camera2 .name,
 .camera3 .name,
@@ -264,13 +302,46 @@ border-radius: 20px;
     height: 60px;
 
 }
-.camera2 {
-    padding-top: 20px;
-}
-.camera5, .camera6 {
-    padding-top: 45px;
+
+
+
+.price {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px solid red;
+    padding: 2px 6px;
+    border-radius: 11px;
+    top: 15px;
+    right: 10px;
+    transform: rotate(-15deg);
 }
 
+.slaider-left {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    transform: rotate(-135deg);
+    z-index: 1000;
+    cursor: pointer;
+}
+.slaider-right {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    transform: rotate(45deg);
+    z-index: 1000;
+    cursor: pointer;
+}
 /* Розділ з обєктивами*/
 .item2-staf {
     margin: 0 auto;
@@ -278,6 +349,7 @@ border-radius: 20px;
     height: 338px;
     box-sizing: border-box;
     border: 2px solid red;
+    position: relative;
     text-transform: uppercase;
 }
 .lens1,
@@ -364,6 +436,7 @@ border-radius: 20px;
     height: 338px;
     box-sizing: border-box;
     border: 2px solid red;
+    position: relative;
     text-transform: uppercase;
 }
 .tripod1,
@@ -418,6 +491,7 @@ border-radius: 20px;
     height: 338px;
     box-sizing: border-box;
     border: 2px solid red;
+    position: relative;
     text-transform: uppercase;
 }
 .outbreak1,
@@ -485,6 +559,7 @@ border-radius: 20px;
     height: 338px;
     box-sizing: border-box;
     border: 2px solid red;
+    position: relative;
     text-transform: uppercase;
 }
 .accessory1,
@@ -566,6 +641,9 @@ border-radius: 20px;
     display: inline-block;
 
 }
+.social-icon:hover {
+    transform: scale(1.05);
+}
 .twiter {
     background: url("../img/twitter.png") no-repeat;
     background-size: contain;
@@ -599,8 +677,10 @@ border-radius: 20px;
     bottom: 70px;
     right: 30px;
     outline: none;
+    cursor: pointer;
 }
 .top:hover {
-
+    transform: scale(1.2) rotate(-45deg);
+    border-color: #212020;
 }
 /* вище - стилі для footer  */

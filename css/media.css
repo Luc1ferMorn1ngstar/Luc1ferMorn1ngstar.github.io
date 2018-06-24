@@ -1,0 +1,5 @@
+@media screen and (max-width: 1150px) {
+    .content-in-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
