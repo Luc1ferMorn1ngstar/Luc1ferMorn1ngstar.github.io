@@ -3,3 +3,28 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+@media screen and (max-width: 1050px) {
+    .header {
+        height: 150px;
+    }
+    .header-flex {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .header-links3 {
+        grid-column: 2/3;
+    }
+}
+@media screen and (max-width: 980px) {
+    .main-menu {
+        height: 130px;
+    }
+    .menu-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .menu-item5 {
+       grid-column: 2/4;
+    }
+
+}
