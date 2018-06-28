@@ -105,46 +105,6 @@ margin-top: 10px;
     top: 170px;
     left: 600px;
 }
-.click {
-    position: absolute;
-    top: 20px;
-    color: black;
-}
-.particles > .particle {
-    border-radius: 100%;
-    background: transparent;
-    position: absolute;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.particles > .particle.smaller {
-    width: 5px;
-    height: 5px;
-}
-.particles > .particle.small {
-    width: 10px;
-    height: 10px;
-}
-.particles > .particle.normal {
-    width: 15px;
-    height: 15px;
-}
-.particles > .particle.big {
-    width: 20px;
-    height: 20px;
-}
-.particles > .particle.bigger {
-    width: 25px;
-    height: 25px;
-}
-
-
-
-
-
-
-
-
 /* нище стилі для менюшки*/
 .main-menu {
     grid-area: main-menu;
