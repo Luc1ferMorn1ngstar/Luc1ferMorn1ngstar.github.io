@@ -18,7 +18,7 @@ body {
 
 }
 .header-flex {
-
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -73,6 +73,13 @@ margin-top: 10px;
 /* вище - стилі для header  */
 
 
+
+
+
+
+
+
+
 .main-img {
     grid-area: main-img;
     width: 100%;
@@ -98,6 +105,46 @@ margin-top: 10px;
     top: 170px;
     left: 600px;
 }
+.click {
+    position: absolute;
+    top: 20px;
+    color: black;
+}
+.particles > .particle {
+    border-radius: 100%;
+    background: transparent;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.particles > .particle.smaller {
+    width: 5px;
+    height: 5px;
+}
+.particles > .particle.small {
+    width: 10px;
+    height: 10px;
+}
+.particles > .particle.normal {
+    width: 15px;
+    height: 15px;
+}
+.particles > .particle.big {
+    width: 20px;
+    height: 20px;
+}
+.particles > .particle.bigger {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
 /* нище стилі для менюшки*/
 .main-menu {
     grid-area: main-menu;
@@ -106,7 +153,7 @@ margin-top: 10px;
     height: 75px;
 }
 
-.main-menu span {
+.main-menu p {
     font-size: 36px;
 display: table-cell;
     vertical-align: middle;
@@ -300,9 +347,19 @@ position: absolute;
     box-sizing: border-box;
     padding-top: 15px;
     height: 60px;
+    cursor: pointer;
 
 }
-
+.full-description {
+    width: 300px;
+    height: 118px;
+    position: absolute;
+    top: 200px;
+    background-color: black;
+    padding-top: 20px;
+    text-align: center;
+    display: none;
+}
 
 
 .price {
@@ -329,6 +386,7 @@ position: absolute;
     transform: rotate(-135deg);
     z-index: 1000;
     cursor: pointer;
+    display: none;
 }
 .slaider-right {
     position: absolute;
@@ -341,6 +399,7 @@ position: absolute;
     transform: rotate(45deg);
     z-index: 1000;
     cursor: pointer;
+    display: none;
 }
 /* Розділ з обєктивами*/
 .item2-staf {
@@ -400,6 +459,7 @@ position: absolute;
     box-sizing: border-box;
     padding-top: 15px;
     height: 60px;
+    cursor: pointer;
 }
 .lens4 {
     padding-top: 35px;
@@ -475,6 +535,7 @@ position: absolute;
     box-sizing: border-box;
     padding-top: 15px;
     height: 60px;
+    cursor: pointer;
 }
 .tripod2 img {
     margin-top: 82px;
@@ -538,6 +599,7 @@ position: absolute;
     box-sizing: border-box;
     padding-top: 15px;
     height: 60px;
+    cursor: pointer;
 }
 .outbreak1 img {
     margin-left: 85px;
@@ -602,6 +664,7 @@ position: absolute;
     box-sizing: border-box;
     padding-top: 15px;
     height: 60px;
+    cursor: pointer;
 }
 .accessory1 img {
     margin-left: 75px;
