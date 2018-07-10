@@ -704,4 +704,8 @@ position: absolute;
     transform: scale(1.2) rotate(-45deg);
     border-color: #212020;
 }
+.money {
+	color: white;
+	text-decoration: none;
+}
 /* вище - стилі для footer  */
